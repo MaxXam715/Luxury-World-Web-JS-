@@ -1,0 +1,22 @@
+:root {
+    --Universal-Black: #222;
+    --Universal-White: #fff;
+    --Text-Reverse100: #fff;
+    --Text-Reverse80: #E8E8E8;
+    --Text-Main80: #666;
+    --Text-Main90: #4D4D4D;
+    --Text-Main100: #222;
+    --Status-ErrorRed: #FB5130;
+    --Universal-DarkGrey: #484848;
+    --Status-SuccessGreenBG: #F4FCF5;
+    --Status-SuccessGreen: #00CA50;
+    --Universal-Grey: #CDCCD1;
+    --Accent-Main: #222;
+    --Accent-Secondary: #4D4D4D;
+    --Accent-Tertiary: #E9E9E9;
+    --Text-DisabledState: #B8B8B8;
+    --Universal-LightGrey: #F7F7F7;
+    --Universal-MidGrey: #E8E8E8;
+    --Status-WarningYellow: #F1B100;
+    --Text-PlaceHolder: #A4A4A4;
+}

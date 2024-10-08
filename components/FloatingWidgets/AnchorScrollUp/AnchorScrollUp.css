@@ -1,0 +1,48 @@
+.G-anchor-scrollUp {
+    position: fixed;
+    bottom: 48px;
+    left: 32px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border: 2px solid var(--Universal-Black);
+    border-radius: 100px;
+    cursor: pointer;
+    transform: translateY(200%);
+    transition: transform 300ms ease-in-out;
+}
+
+.G-anchor-scrollUp.show {
+    transform: translateY(0);
+}
+
+.G-anchor-scrollUp .icon {
+    font-size: 28px;
+    background-color: var(--Universal-Black);
+}
+
+.G-anchor-scrollUp:hover {
+    border-color: var(--Text-Main80);
+}
+
+.G-anchor-scrollUp:hover .icon {
+    background-color: var(--Text-Main80);
+}
+
+@media (max-width: 767px) {
+    .G-anchor-scrollUp {
+        left: 16px;
+        bottom: 16px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .G-anchor-scrollUp .icon {
+        font-size: 22px;
+    }
+}

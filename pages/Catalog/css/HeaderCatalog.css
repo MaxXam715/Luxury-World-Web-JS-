@@ -1,0 +1,98 @@
+.header-catalog {
+    background-color: #fff;
+}
+
+.header-catalog .title-block {
+    color: var(--Text-Main100);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 126%;
+    margin-bottom: 64px;
+}
+
+.header-catalog .row-filter {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto minmax(100px, 1fr) auto;
+    grid-column-gap: 16px;
+    width: 100%;
+}
+
+.header-catalog .row-filter .btn-open-filter {
+    height: 46px;
+    flex-shrink: 0;
+    background: var(--Universal-White);
+    box-shadow: 0px 10px 40px 0px rgba(212, 217, 232, 0.35);
+}
+
+.header-catalog .row-filter .btn-open-filter .count {
+    margin-left: 3px;
+}
+
+.header-catalog .row-filter .btn-open-filter .icon {
+    margin-left: 10px;
+}
+
+.header-catalog .row-filter form {
+    display: block;
+    width: 100%;
+}
+
+.header-catalog .row-filter .slider-brand {
+    height: 100%;
+}
+
+.header-catalog .row-filter .slider-brand .swiper-slide {
+    width: auto;
+    height: 100%;
+}
+
+.header-catalog .row-filter .slider-brand .swiper-slide .field-container {
+    height: 100%;
+    width: max-content;
+}
+
+.header-catalog .row-filter .slider-brand .swiper-slide .field-container .grid-fields-array {
+    height: 100%;
+}
+
+.header-catalog .row-filter .slider-brand .swiper-slide .field-container .grid-fields-array label {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    height: 100%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--Universal-White);
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+}
+
+.header-catalog .row-filter .slider-brand .swiper-slide .field-container .grid-fields-array label .title {
+
+}
+
+@media (max-width: 800px) {
+    .header-catalog .row-filter form {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-catalog .row-filter .btn-sort {
+        display: none;
+    }
+
+    .header-catalog .title-block {
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .header-catalog .row-filter {
+        grid-template-columns: 1fr;
+    }
+
+    .header-catalog .row-filter .btn-open-filter {
+        width: 100%;
+    }
+}

@@ -1,0 +1,109 @@
+.promo-watch-banner {
+    margin-bottom: 128px;
+}
+
+.promo-watch-banner .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.promo-watch-banner .header-section .title {
+    color: var(--Text-Main100);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.promo-watch-banner .header-section .link-btn {
+    display: flex;
+    align-items: center;
+    grid-gap: 2px;
+    color: var(--Text-Main100);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.promo-watch-banner .header-section .link-btn .icon {
+    font-size: 14px;
+}
+
+.promo-watch-banner .grid-container {
+    display: flex;
+    grid-column-gap: 80px;
+    grid-row-gap: 32px;
+}
+
+.promo-watch-banner .grid-container[data-mode="banner-watch"] {
+    flex-direction: row;
+}
+
+.promo-watch-banner .grid-container[data-mode="watch-banner"] {
+    flex-direction: row-reverse;
+}
+
+.promo-watch-banner .grid-container .col-banner {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.promo-watch-banner .grid-container .col-banner .banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms ease-in-out;
+}
+
+.promo-watch-banner .grid-container .col-banner .banner:hover {
+    transform: scale(1.1);
+}
+
+.promo-watch-banner .grid-container .col-watch {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+}
+
+.promo-watch-banner .grid-container .col-watch .G-card-watch-preview {
+    height: 100%;
+}
+
+.promo-watch-banner .grid-container .col-watch .G-card-watch-preview .row-container {
+    height: 100%;
+}
+
+.promo-watch-banner .grid-container .col-watch .G-card-watch-preview .row-container .photo-container {
+    width: auto;
+    max-width: unset;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .promo-watch-banner {
+        margin-bottom: 64px;
+    }
+
+    .promo-watch-banner .grid-container[data-mode="banner-watch"] {
+        flex-direction: column;
+    }
+
+    .promo-watch-banner .grid-container[data-mode="watch-banner"] {
+        flex-direction: column-reverse;
+    }
+
+    .G-card-watch-preview .row-container .desc-container .title {
+        font-size: 18px;
+    }
+
+    .G-card-watch-preview .row-container .desc-container .price {
+        font-size: 14px;
+    }
+
+    .promo-watch-banner .grid-container .col-watch .G-card-watch-preview .row-container .photo-container {
+        max-width: 208px;
+    }
+}

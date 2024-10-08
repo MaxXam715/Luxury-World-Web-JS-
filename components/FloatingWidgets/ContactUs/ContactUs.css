@@ -1,0 +1,129 @@
+.G-widget-ContactUs {
+    position: fixed;
+    z-index: 10;
+    bottom: 48px;
+    right: 32px;
+    border-radius: 100px;
+}
+
+.G-widget-ContactUs .btn-toggle {
+    width: 64px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    border-radius: 100px;
+    border: 1px solid var(--Universal-White);
+    background-color: var(--Universal-Black);
+}
+
+@media (min-width: 767px) {
+    .G-widget-ContactUs .btn-toggle:hover {
+        background-color: var(--Text-Main80);
+    }
+}
+
+.G-widget-ContactUs .btn-toggle .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--Text-Reverse100);
+    transform: translate(-50%, -50%);
+    transition: all 200ms;
+}
+
+.G-widget-ContactUs .btn-toggle .icon.message {
+    font-size: 34px;
+}
+
+.G-widget-ContactUs .btn-toggle .icon.close {
+    font-size: 20px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7) rotate(90deg);
+}
+
+.G-widget-ContactUs.open .btn-toggle .icon.message {
+    opacity: 0;
+}
+
+.G-widget-ContactUs.open .btn-toggle .icon.close {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+}
+
+.G-widget-ContactUs .list-networks {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    max-height: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 100px;
+    transition: all 300ms ease-in-out;
+}
+
+.G-widget-ContactUs.open .list-networks {
+    margin-bottom: 16px;
+    bottom: 100%;
+}
+
+.G-widget-ContactUs .list-networks .btn-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 64px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    border: 1px solid var(--Universal-White);
+    border-radius: 100px;
+    background-color: var(--Universal-Black);
+    transform: scale(0.3);
+    transition: all 300ms;
+}
+
+@media (min-width: 767px) {
+    .G-widget-ContactUs .list-networks .btn-item:hover {
+        background-color: var(--Text-Main80);
+    }
+}
+
+.G-widget-ContactUs.open .list-networks .btn-item {
+    transform: scale(1);
+}
+
+.G-widget-ContactUs .list-networks .btn-item .icon {
+    font-size: 26px;
+    background-color: var(--Text-Reverse100);
+    transition: all 200ms;
+}
+
+@media (max-width: 767px) {
+    .G-widget-ContactUs {
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .G-widget-ContactUs .list-networks {
+        grid-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .G-widget-ContactUs .list-networks .btn-item,
+    .G-widget-ContactUs .btn-toggle {
+        width: 48px;
+    }
+
+    .G-widget-ContactUs .btn-toggle .icon.message {
+        font-size: 22px;
+    }
+
+    .G-widget-ContactUs .btn-toggle .icon.close {
+        font-size: 16px;
+    }
+
+    .G-widget-ContactUs .list-networks .btn-item .icon {
+        font-size: 22px;
+    }
+}

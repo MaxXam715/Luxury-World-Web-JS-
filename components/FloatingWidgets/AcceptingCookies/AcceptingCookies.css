@@ -1,0 +1,70 @@
+.G-widget-accept-cookies {
+    position: fixed;
+    bottom: 32px;
+    right: 128px;
+    z-index: 10;
+    width: 400px;
+    border-radius: 16px;
+    background: var(--Universal-White);
+    box-shadow: 0px 10px 40px 0px rgba(212, 217, 232, 0.35);
+    transform: translateX(150%);
+    transition: transform 600ms ease-in-out;
+}
+
+.G-widget-accept-cookies.show {
+    transform: translateX(0);
+}
+
+.G-widget-accept-cookies .row-container {
+    padding: 16px 20px;
+}
+
+.G-widget-accept-cookies .row-container .title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 8px;
+}
+
+.G-widget-accept-cookies .row-container .desc {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%
+}
+
+.G-widget-accept-cookies .row-container .btn {
+    margin-top: 34px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .G-widget-accept-cookies {
+        right: 50%;
+        width: calc(100% - 32px);
+        bottom: auto;
+        top: 102px;
+        transform: translateX(200%);
+    }
+
+    .G-widget-accept-cookies.show {
+        transform: translateX(50%);
+    }
+
+    .G-widget-accept-cookies .row-container {
+        padding: 12px 16px;
+    }
+
+    .G-widget-accept-cookies .row-container .title {
+        font-size: 16px;
+    }
+
+    .G-widget-accept-cookies .row-container .desc {
+        font-size: 12px;
+    }
+
+    .G-widget-accept-cookies .row-container .btn {
+        margin-top: 16px;
+    }
+}

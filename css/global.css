@@ -1,0 +1,68 @@
+@import "/css/variables.css";
+@import "/css/fonts.css";
+@import "/assets/icons/icons.css";
+@import "/css/uikit.css";
+@import "/css/form.css";
+@import "/css/reset.css";
+
+@import "/components/Header/Header.css";
+@import "/components/CurrencyChange/CurrencyChange.css";
+@import "/components/MobileMenu/MobileMenu.css";
+@import "/components/Footer/Footer.css";
+@import "/plugins/modal/modal.css";
+@import "/components/GlobalSearch/GlobalSearch.css";
+@import "/components/CartPreview/CartPreview.css";
+@import "/components/CardProductPreview/CardProductPreview.css";
+@import "/components/FloatingWidgets/AnchorScrollUp/AnchorScrollUp.css";
+@import "/components/FloatingWidgets/ContactUs/ContactUs.css";
+@import "/components/FloatingWidgets/AcceptingCookies/AcceptingCookies.css";
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+#app {
+    position: relative;
+    min-height: 74vh;
+    transition: opacity 600ms;
+}
+
+body.no-scroll {
+    padding-right: var(--widthScrollBar);
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
+
+.G-container {
+    width: 100%;
+    max-width: calc(1280px + 160px);
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    transition: max-width 200ms, padding 200ms;
+}
+
+@media (max-width: 1200px) {
+    .G-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .G-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.hide-scroll {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE, Edge */
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}

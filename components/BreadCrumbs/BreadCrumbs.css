@@ -1,0 +1,51 @@
+.P-breadCrumbs {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.P-breadCrumbs .list-breadCrumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.P-breadCrumbs .list-breadCrumbs .item {
+    position: relative;
+    color: var(--Text-Main100);
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+.P-breadCrumbs .list-breadCrumbs .item:not(:first-child):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(-75%, -50%);
+
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    font-size: 12px;
+    background-color: var(--Text-Main100);
+
+    mask-image: url(/assets/icons/row-right.svg);
+    -webkit-mask-image: url(/assets/icons/row-right.svg);
+}
+
+.P-breadCrumbs .list-breadCrumbs .item:hover {
+    color: var(--Text-Main80);
+}
+
+@media (max-width: 767px) {
+    .P-breadCrumbs {
+        display: none;
+    }
+}

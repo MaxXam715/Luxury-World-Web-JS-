@@ -1,0 +1,100 @@
+.G-footer {
+    margin-top: 128px;
+    background: var(--Universal-Black);
+}
+
+.G-footer > .G-container {
+
+}
+
+.G-footer > .G-container > .row-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    grid-gap: 128px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.G-footer .nav-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+    justify-content: space-between;
+    grid-gap: 10px;
+    grid-row-gap: 40px;
+    width: 100%;
+}
+
+.G-footer .nav-wrapper .col-nav {
+
+}
+
+.G-footer .nav-wrapper .col-nav > .title {
+    color: var(--Text-Reverse100);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 142.857%;
+    margin-bottom: 12px;
+}
+
+.G-footer .nav-wrapper .col-nav .list-link {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+}
+
+.G-footer .nav-wrapper .col-nav .list-link > a {
+    color: var(--Text-Reverse100);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142.857%;
+}
+
+.G-footer .nav-wrapper .col-nav .list-link > a:hover {
+    color: var(--Text-Reverse80);
+}
+
+.G-footer .nav-wrapper .col-nav .list-network {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 16px;
+}
+
+.G-footer .nav-wrapper .col-nav .list-network a {
+
+}
+
+.G-footer .nav-wrapper .col-nav .list-network a .icon {
+    font-size: 24px;
+    background-color: var(--Text-Reverse100);
+}
+
+.G-footer .nav-wrapper .col-nav .list-network a:hover .icon {
+    background-color: var(--Text-Reverse80);
+}
+
+@media (max-width: 1480px) {
+    .G-footer .nav-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .G-footer {
+        margin-top: 68px;
+    }
+
+    .G-footer > .G-container > .row-container {
+        flex-direction: column;
+        grid-gap: 44px;
+    }
+
+    .G-footer .form-wrapper {
+        width: 100%;
+        flex-shrink: unset;
+    }
+
+    .G-footer .nav-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}

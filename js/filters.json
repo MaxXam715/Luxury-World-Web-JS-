@@ -1,0 +1,71 @@
+{
+  "watch": {
+    "brands": [
+      {
+        "title": "Rolex",
+        "value": "Rolex"
+      },
+      {
+        "title": "Hublot",
+        "value": "Hublot"
+      },
+      {
+        "title": "Omega",
+        "value": "Omega"
+      },
+      {
+        "title": "Breguet",
+        "value": "Breguet"
+      },
+      {
+        "title": "Patek Philippe",
+        "value": "Patek Philippe"
+      },
+      {
+        "title": "Tissot",
+        "value": "Tissot"
+      },
+      {
+        "title": "Test",
+        "value": "Test"
+      }
+    ],
+    "color": [
+      {
+        "title": "Белый",
+        "value": "white",
+        "color": "#fff"
+      },
+      {
+        "title": "Жёлтый",
+        "value": "yellow",
+        "color": "#F1B100"
+      },
+      {
+        "title": "Зелёный",
+        "value": "green",
+        "color": "#00CA50"
+      },
+      {
+        "title": "Красный",
+        "value": "red",
+        "color": "#FB5130"
+      },
+      {
+        "title": "Черный",
+        "value": "black",
+        "color": "#222222"
+      }
+    ],
+    "availability": [
+      {
+        "title": "Бутик в Москве",
+        "value": "moscow"
+      },
+      {
+        "title": "Под заказ",
+        "value": "under-order"
+      }
+    ]
+  }
+}

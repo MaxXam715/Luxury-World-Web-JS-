@@ -1,0 +1,112 @@
+.how-to-receive-product {
+    margin-bottom: 128px;
+}
+
+.how-to-receive-product .title-block {
+    margin-bottom: 32px;
+}
+
+.how-to-receive-product .grid-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+}
+
+.how-to-receive-product .grid-cols .col-map {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.how-to-receive-product .grid-cols .col-map iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.how-to-receive-product .grid-cols .col-desc {
+
+}
+
+.how-to-receive-product .grid-cols .col-desc .list-step {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 48px;
+}
+
+.how-to-receive-product .grid-cols .col-desc .list-step .item {
+    position: relative;
+    padding-left: 87px;
+}
+
+.how-to-receive-product .grid-cols .col-desc .list-step .item .title {
+
+}
+
+.how-to-receive-product .grid-cols .col-desc .list-step .item .title .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--Accent-Secondary);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.96px;
+}
+
+.how-to-receive-product .grid-cols .col-desc .list-step .item .title .text {
+    color: var(--Text-Main100);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 126%;
+}
+
+.how-to-receive-product .grid-cols .col-desc .list-step .item .desc {
+    color: var(--Text-Main80);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155%;
+    margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+    .how-to-receive-product {
+        margin-bottom: 64px;
+    }
+
+    .how-to-receive-product .grid-cols {
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+    }
+
+    .how-to-receive-product .grid-cols .col-desc .list-step {
+        grid-gap: 24px;
+    }
+
+    .how-to-receive-product .grid-cols .col-desc .list-step .item .title {
+        display: flex;
+        align-items: center;
+        grid-gap: 8px;
+    }
+
+    .how-to-receive-product .grid-cols .col-desc .list-step .item {
+        padding-left: 0;
+    }
+
+    .how-to-receive-product .grid-cols .col-desc .list-step .item .title .number {
+        position: unset;
+        top: auto;
+        left: auto;
+        font-size: 24px;
+    }
+
+    .how-to-receive-product .grid-cols .col-desc .list-step .item .title .text {
+        font-size: 20px;
+    }
+
+    .how-to-receive-product .grid-cols .col-desc .list-step .item .desc {
+        font-size: 16px;
+    }
+}

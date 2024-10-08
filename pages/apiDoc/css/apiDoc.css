@@ -1,0 +1,165 @@
+.G-container {
+    max-width: calc(1000px + 160px);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.header-api {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header-api .title {
+    color: var(--Text-Main100);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 126%;
+    margin-bottom: 30px;
+}
+
+.header-api .server {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.header-api .server .name {
+    padding: 6px 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+.method-item {
+    margin-bottom: 30px;
+}
+
+.method-item .method-wrapper {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.method-item.get .method-wrapper {
+    background-color: rgba(97, 175, 254, .1);
+    border-color: #61affe;
+}
+
+.method-item .method-wrapper .header {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.method-item .method-wrapper .header .method-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100%;
+
+    border-radius: 3px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 700;
+    min-width: 80px;
+    padding: 8px 0;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+.method-item.get .method-wrapper .header .method-type {
+    background-color: #61affe;
+}
+
+.method-item .method-wrapper .header .path {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.method-item .method-wrapper .header .desc {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.method-item .method-wrapper .table-params-wrapper {
+    padding: 20px;
+}
+
+.method-item .method-wrapper .table-params-wrapper .title {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.method-item .method-wrapper .table-params-wrapper table {
+    background-color: #fff;
+    width: 100%;
+
+    border: 1px solid #dddddd;
+    border-collapse: separate;
+    border-left: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 13px;
+    border-spacing: 0;
+}
+
+.method-item .method-wrapper .table-params-wrapper table thead {
+    height: 32px;
+}
+
+.method-item .method-wrapper .table-params-wrapper table thead tr {
+
+}
+
+.method-item .method-wrapper .table-params-wrapper table thead tr th {
+
+}
+
+.method-item .method-wrapper .table-params-wrapper table thead tr th,
+.method-item .method-wrapper .table-params-wrapper table tbody tr td {
+    border-left: 1px solid #dddddd;
+    border-top: 0;
+    padding: 4px 8px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+
+.method-item .method-wrapper .table-params-wrapper table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.method-item .method-wrapper .table-params-wrapper table tbody tr td code {
+    position: relative;
+    padding: 2px 4px;
+    color: #d14;
+    white-space: nowrap;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    font-family: "Ubuntu Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 14px;
+    margin-right: 5px;
+}

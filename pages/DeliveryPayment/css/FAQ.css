@@ -1,0 +1,101 @@
+.section-faq {
+
+}
+
+.section-faq .title-block {
+    margin-bottom: 32px;
+}
+
+.section-faq .grid-faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.section-faq .grid-faq .item {
+    height: max-content;
+    border-radius: 16px;
+    background: var(--Universal-White);
+    box-shadow: 0px 10px 40px 0px rgba(212, 217, 232, 0.35);
+}
+
+.section-faq .grid-faq .item .title {
+    position: relative;
+    padding: 26px 30px;
+    padding-right: 78px;
+    color: var(--Text-Main100);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 133%;
+    cursor: pointer;
+}
+
+.section-faq .grid-faq .item .title:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    font-size: 26px;
+    background-color: var(--Text-Main100);
+    transition: all 150ms linear;
+    mask-image: url(/assets/icons/arrow-bottom.svg);
+    -webkit-mask-image: url(/assets/icons/arrow-bottom.svg);
+}
+
+.section-faq .grid-faq .item.active .title:after {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.section-faq .grid-faq .item .answer-container {
+    max-height: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: max-height 150ms linear;
+}
+
+.section-faq .grid-faq .item .answer-container .desc {
+    color: var(--Text-Main80);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155%;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .section-faq .grid-faq {
+        grid-template-columns: 1fr;
+    }
+
+    .section-faq .grid-faq .item .title {
+        padding: 24px 16px;
+        padding-right: 45px;
+        font-size: 16px;
+    }
+
+    .section-faq .grid-faq .item .title:after {
+        font-size: 14px;
+        right: 18px;
+    }
+
+    .section-faq .grid-faq .item .answer-container {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: -8px;
+    }
+
+    .section-faq .grid-faq .item .answer-container .desc {
+        font-size: 14px;
+    }
+}

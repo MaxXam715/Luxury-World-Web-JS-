@@ -1,0 +1,76 @@
+.how-to-pay {
+    margin-bottom: 128px;
+}
+
+.how-to-pay .title-block {
+    margin-bottom: 32px;
+}
+
+.how-to-pay .grid-payment-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.how-to-pay .grid-payment-methods .item {
+    display: flex;
+    padding: 40px 32px;
+    grid-gap: 32px;
+
+    border-radius: 16px;
+    background: var(--Universal-White);
+    box-shadow: 0px 10px 40px 0px rgba(212, 217, 232, 0.35);
+}
+
+.how-to-pay .grid-payment-methods .item .icon {
+    font-size: 40px;
+    background-color: var(--Universal-Black);
+}
+
+.how-to-pay .grid-payment-methods .item .text-desc {
+    width: 100%;
+    max-width: 433px;
+}
+
+.how-to-pay .grid-payment-methods .item .text-desc .title {
+    color: var(--Text-Main100);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 126%;
+    margin-bottom: 58px;
+}
+
+.how-to-pay .grid-payment-methods .item .text-desc .desc {
+    color: var(--Text-Main80);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 133%;
+}
+
+
+@media (max-width: 900px) {
+    .how-to-pay {
+        margin-bottom: 68px;
+    }
+
+    .how-to-pay .grid-payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .how-to-pay .grid-payment-methods .item {
+        padding: 20px 24px;
+    }
+
+    .how-to-pay .grid-payment-methods .item .icon {
+        font-size: 24px;
+    }
+
+    .how-to-pay .grid-payment-methods .item .text-desc .title {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .how-to-pay .grid-payment-methods .item .text-desc .desc {
+        font-size: 14px;
+    }
+}

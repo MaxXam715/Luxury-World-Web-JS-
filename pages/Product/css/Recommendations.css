@@ -1,0 +1,35 @@
+.recommendations-block {
+    margin-bottom: 128px;
+}
+
+.recommendations-block .header-section {
+    margin-bottom: 16px;
+}
+
+.recommendations-block .header-section .title {
+    color: var(--Universal-Black);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 133%;
+}
+
+.recommendations-block .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-gap: 36px;
+}
+
+@media (max-width: 1200px) {
+    .recommendations-block {
+        margin-bottom: 64px;
+    }
+
+    .recommendations-block .header-section .title {
+        font-size: 18px;
+    }
+
+    .recommendations-block .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

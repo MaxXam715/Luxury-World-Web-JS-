@@ -1,0 +1,61 @@
+.P-list-catalog {
+    margin-top: 65px;
+}
+
+.P-list-catalog .list-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 32px;
+    grid-row-gap: 64px;
+    margin-bottom: 128px;
+}
+
+.P-list-catalog .pagination-page {
+    display: flex;
+    align-content: center;
+    grid-column-gap: 12px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.P-list-catalog .pagination-page .btn-page {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    border-radius: 8px;
+    border: 2px solid var(--Universal-Black);
+
+    color: var(--Text-Main100);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.P-list-catalog .pagination-page .btn-page.active {
+    background-color: var(--Universal-Black);
+    color: #fff;
+}
+
+.P-list-catalog .pagination-page .separator {
+    align-self: center;
+    margin-top: 5px;
+
+    color: var(--Text-Main100, #222);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+@media (max-width: 700px) {
+    .P-list-catalog {
+        margin-top: 32px;
+    }
+
+    .P-list-catalog .list-products {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 36px;
+        margin-bottom: 64px;
+    }
+}

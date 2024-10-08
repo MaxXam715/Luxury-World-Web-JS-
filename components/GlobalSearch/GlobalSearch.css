@@ -1,0 +1,169 @@
+.modal-global-search {
+
+}
+
+.modal-global-search .container-body .modal-header {
+    display: none !important;
+}
+
+.modal-global-search .container-body .modal-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 26px !important;
+    padding-bottom: 64px !important;
+}
+
+.modal-global-search .row-container {
+
+}
+
+/* header */
+.modal-global-search .row-container .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.modal-global-search .row-container .header form {
+    width: 100%;
+    margin-right: 24px;
+}
+
+.modal-global-search .row-container .header .btn {
+    width: 125px;
+    flex-shrink: 0;
+}
+
+.modal-global-search .row-container .header .btn-find-products {
+    margin-right: 16px;
+}
+
+.modal-global-search .row-container .header .btn-close-search .icon {
+    display: none;
+}
+/* end - header */
+
+
+.modal-global-search .row-container .hint-container {
+    display: grid;
+    grid-template-columns: minmax(0, 260px) minmax(0, 900px);
+    justify-content: space-between;
+    grid-gap: 32px;
+}
+
+/* popular queries */
+.modal-global-search .row-container .hint-container .popular-queries {
+
+}
+
+.modal-global-search .row-container .hint-container .popular-queries .title-block {
+    color: var(--Universal-Black);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 133%;
+    margin-bottom: 16px;
+}
+
+.modal-global-search .row-container .hint-container .popular-queries .list-queries {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+}
+
+.modal-global-search .row-container .hint-container .popular-queries .list-queries .item {
+    color: var(--Text-Main100);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+/* end - popular queries */
+
+
+/* our recommendations */
+.modal-global-search .row-container .hint-container .our-recommendations {
+
+}
+
+.modal-global-search .row-container .hint-container .our-recommendations .title-block {
+    color: var(--Universal-Black);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 133%;
+    margin-bottom: 16px;
+}
+
+.modal-global-search .row-container .hint-container .our-recommendations .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-gap: 24px;
+}
+/* end - our recommendations */
+
+@media (max-width: 930px) {
+    .modal-global-search .row-container .hint-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 64px;
+    }
+
+    .modal-global-search .row-container .hint-container .popular-queries .title-block,
+    .modal-global-search .row-container .hint-container .our-recommendations .title-block {
+        font-size: 18px;
+    }
+
+    .modal-global-search .container-body {
+        height: 100% !important;
+        max-height: unset !important;
+    }
+
+    .modal-global-search .container-body .modal-content {
+        padding-top: 16px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .modal-global-search .row-container .hint-container .our-recommendations .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 36px !important;
+    }
+
+    .modal-global-search .row-container .hint-container .popular-queries .list-queries .item {
+        font-size: 16px;
+    }
+
+    .modal-global-search .row-container .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-column-gap: 16px;
+        grid-row-gap: 12px;
+        grid-template-areas:
+        "input btn-1"
+        "btn-2 btn-2";
+    }
+
+    .modal-global-search .row-container .header form {
+        order: 1;
+    }
+
+    .modal-global-search .row-container .header .btn-close-search {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        order: 2;
+    }
+
+    .modal-global-search .row-container .header .btn-find-products {
+        width: 100%;
+        order: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .modal-global-search .row-container .header .btn-close-search .icon {
+        display: inline-block;
+    }
+
+    .modal-global-search .row-container .header .btn-close-search span {
+        display: none;
+    }
+}

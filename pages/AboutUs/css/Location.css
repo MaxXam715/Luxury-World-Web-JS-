@@ -1,0 +1,35 @@
+.our-location {
+
+}
+
+.our-location .title-block {
+    margin-bottom: 32px;
+}
+
+.our-location .desc-block {
+    color: var(--Text-Main100);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.our-location .map-container {
+    aspect-ratio: 1280 / 504;
+    background-color: #ccc;
+    margin-top: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.our-location .map-container iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .our-location .map-container {
+        border-radius: 12px;
+        aspect-ratio: 1 / 1;
+    }
+}

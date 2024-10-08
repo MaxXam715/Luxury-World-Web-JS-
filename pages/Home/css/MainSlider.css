@@ -1,0 +1,90 @@
+section.main-slider {
+    margin-bottom: 64px;
+}
+
+section.main-slider .slider-container {
+    width: 100%;
+    aspect-ratio: 1280 / 504;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+section.main-slider .slider-container .slider-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+section.main-slider .slider-container .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+section.main-slider .slider-container .slider-wrapper .slide-button .icon {
+    font-size: 34px;
+    background-color: #fff;
+}
+
+section.main-slider .slider-container .slider-wrapper .slide-button.btn-next {
+    left: 40px;
+}
+
+section.main-slider .slider-container .slider-wrapper .slide-button.btn-prev {
+    right: 40px;
+}
+
+section.main-slider .slider-container .slider-wrapper .swiper-slide {
+
+}
+
+section.main-slider .slider-container .slider-wrapper .swiper-slide a {
+    width: 100%;
+    height: 100%;
+}
+
+section.main-slider .slider-container .slider-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.main-slider .slider-container .slider-wrapper .swiper-pagination-bullet {
+    position: relative;
+    width: 66px;
+    border-radius: 8px;
+    background: var(--Universal-DarkGrey);
+    height: 4px;
+    opacity: 1 !important;
+    transition: all 100ms ease-out;
+}
+
+section.main-slider .slider-container .slider-wrapper .swiper-pagination-bullet-active:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--progress);
+    height: 100%;
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    section.main-slider {
+        margin-bottom: 32px;
+    }
+
+    section.main-slider .slider-container .slider-wrapper .swiper-pagination-bullet {
+        width: 33px;
+    }
+
+    section.main-slider .slider-container .slider-wrapper .slide-button {
+        display: none !important;
+    }
+
+    section.main-slider .slider-container {
+        aspect-ratio: 1 / 1;
+        min-height: unset;
+    }
+}

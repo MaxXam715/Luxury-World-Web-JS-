@@ -1,0 +1,196 @@
+@import "/components/UpBar/UpBar.css";
+
+.G-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    margin-bottom: 32px;
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.G-header.is-scrolled {
+    box-shadow: 0px 10px 40px 0px rgba(212, 217, 232, 0.35);
+}
+
+/* top-bar */
+
+.G-header .top-bar {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    align-items: center;
+    justify-content: center;
+    height: 94px;
+}
+
+.G-header .top-bar .col-left {
+
+}
+
+.G-header .top-bar .col-left .btn-open-menu {
+    flex-direction: column;
+    grid-gap: 4px;
+    width: 24px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.G-header .top-bar .col-left .btn-open-menu .line {
+    width: 20px;
+    height: 2px;
+    background-color: var(--Text-Main100);
+    border-radius: 50px;
+}
+
+.G-header .top-bar .col-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.G-header .top-bar .col-center .logo-img {
+    width: 429px;
+    height: auto;
+}
+
+.G-header .top-bar .col-right {
+
+}
+
+.G-header .top-bar .col-right .row-action {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-gap: 48px;
+}
+
+.G-header .top-bar .col-right .row-action .btn {
+    width: 32px;
+}
+
+.G-header .top-bar .col-right .row-action .btn .icon {
+    font-size: 26px;
+    background-color: var(--Text-Main100);
+}
+
+.G-header .top-bar .col-right .row-action .btn:hover .icon {
+    background-color: var(--Text-Main80);
+}
+
+.G-header .top-bar .col-right .row-action .btn:active .icon {
+    background-color: var(--Text-Main90);
+}
+
+.G-header .top-bar .col-right .row-action .btn.btn-open-cart .count {
+    position: absolute;
+    top: -6%;
+    right: -17%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 16px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--Status-ErrorRed);
+    color: var(--Text-Reverse100);
+    border-radius: 50px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+/* end - top-bar */
+
+
+/* nav-container */
+.G-header .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}
+
+.G-header .nav-container .link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 120px;
+}
+
+.G-header .nav-container .link-wrapper .link-item {
+    position: relative;
+    color: var(--Text-Main80);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.G-header .nav-container .link-wrapper .link-item:hover {
+    color: var(--Text-Main100);
+}
+
+.G-header .nav-container .link-wrapper .link-item:active {
+    color: var(--Text-Main80);
+}
+
+.G-header .nav-container .link-wrapper .link-item.visited {
+    color: var(--Text-Main100);
+}
+
+.G-header .nav-container .link-wrapper .link-item.visited:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--Text-Main100);
+}
+/* end - nav-container */
+
+@media (max-width: 1200px) {
+    .G-header .nav-container .link-wrapper {
+        grid-gap: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .G-header .top-bar {
+        grid-template-columns: 80px 1fr 80px;
+        height: 56px;
+    }
+
+    .G-header .top-bar .col-left .btn-open-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .G-header .top-bar .col-center .logo-img {
+        width: 163px;
+    }
+
+    .G-header .top-bar .col-right .row-action {
+        grid-gap: 12px;
+    }
+
+    .G-header .top-bar .col-right .row-action .btn-currency-change {
+        display: none;
+    }
+
+    .G-header .top-bar .col-right .row-action .btn {
+        width: 24px;
+    }
+
+    .G-header .top-bar .col-right .row-action .btn .icon {
+        font-size: 20px;
+    }
+
+    .G-header .top-bar .col-right .row-action .btn.btn-open-cart .count {
+        width: 12px;
+        font-size: 9px;
+    }
+
+    .G-header .nav-container {
+        display: none;
+    }
+}
